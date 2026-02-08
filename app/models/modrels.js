@@ -59,9 +59,9 @@ ShoppingList.belongsTo(User, {
 // ✅ SQLite + alter:true esetén gyakori FK gond -> sync idejére kikapcsoljuk
 await sequelize.query('PRAGMA foreign_keys = OFF');
 
-await sequelize.sync({
-  alter: true
-});
+// await sequelize.sync({
+//   alter: true
+// });
 
 await sequelize.query('PRAGMA foreign_keys = ON');
 
