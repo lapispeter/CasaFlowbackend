@@ -40,7 +40,7 @@ describe('/api/bills', function () {
       .send({
         billType: 'Villany',
         amount: 12345.67,
-        date: '2026-01-15',
+        date: '2026-06-15',
         paymentStatus: 'Nem'
       })
 
@@ -60,7 +60,7 @@ describe('/api/bills', function () {
       .send({
         billType: 'Gáz',
         amount: 5000,
-        date: '2026-01-10',
+        date: '2026-06-10',
         paymentStatus: 'Nem'
       })
 
@@ -84,7 +84,7 @@ describe('/api/bills', function () {
       .send({
         billType: 'Víz',
         amount: 2000,
-        date: '2026-01-20',
+        date: '2026-06-20',
         paymentStatus: 'Nem'
       })
 
@@ -98,7 +98,7 @@ describe('/api/bills', function () {
       .send({
         billType: 'Víz',
         amount: 2500,
-        date: '2026-01-21',
+        date: '2026-06-21',
         paymentStatus: 'Igen'
       })
 
@@ -118,7 +118,7 @@ describe('/api/bills', function () {
       .send({
         billType: 'Net',
         amount: 999,
-        date: '2026-01-05',
+        date: '2026-06-05',
         paymentStatus: 'Nem'
       })
 

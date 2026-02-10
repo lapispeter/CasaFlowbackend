@@ -43,8 +43,8 @@ describe('/api/shopping-lists', function () {
         note: '2.8%-os',
         quantity: 2,
         unit: 'l',
-        purchaseDate: '2026-01-15',
-        expiryDate: '2026-01-20',
+        purchaseDate: '2026-06-15',
+        expiryDate: '2026-07-20',
         isBought: false,
       })
 
@@ -70,8 +70,8 @@ describe('/api/shopping-lists', function () {
         note: 'Teljes kiőrlésű',
         quantity: 1,
         unit: 'db',
-        purchaseDate: '2026-01-10',
-        expiryDate: '2026-01-12',
+        purchaseDate: '2026-06-10',
+        expiryDate: '2026-07-12',
         isBought: false,
       })
 
@@ -98,8 +98,8 @@ describe('/api/shopping-lists', function () {
         note: 'piros',
         quantity: 3,
         unit: 'kg',
-        purchaseDate: '2026-01-20',
-        expiryDate: '2026-01-30',
+        purchaseDate: '2026-08-20',
+        expiryDate: '2026-09-30',
         isBought: false,
       })
 
@@ -115,8 +115,8 @@ describe('/api/shopping-lists', function () {
         note: 'piros, édes',
         quantity: 4,
         unit: 'kg',
-        purchaseDate: '2026-01-21',
-        expiryDate: '2026-02-01',
+        purchaseDate: '2026-08-21',
+        expiryDate: '2026-09-01',
         isBought: true,
       })
 
@@ -144,8 +144,8 @@ describe('/api/shopping-lists', function () {
         note: null,
         quantity: 1,
         unit: 'db',
-        purchaseDate: '2026-01-05',
-        expiryDate: '2026-02-05',
+        purchaseDate: '2026-08-05',
+        expiryDate: '2026-09-05',
         isBought: false,
       })
 

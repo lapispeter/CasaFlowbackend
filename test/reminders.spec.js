@@ -40,7 +40,7 @@ describe('/api/reminders', function () {
       .send({
         title: 'autó',
         description: 'gyertyacsere',
-        date: '2026-02-01'
+        date: '2026-06-01'
       })
 
     assert.equal(res.status, 201)
@@ -59,7 +59,7 @@ describe('/api/reminders', function () {
       .send({
         title: 'születésnap',
         description: 'Lányom',
-        date: '2026-02-01'
+        date: '2026-06-01'
       })
 
     const res = await request(app)
@@ -81,7 +81,7 @@ describe('/api/reminders', function () {
       .send({
         title: 'névnap',
         description: 'feleség',
-        date: '2026-03-01'
+        date: '2026-07-01'
       })
 
     const id = createRes.body.data.id
@@ -93,13 +93,13 @@ describe('/api/reminders', function () {
       .send({
         title: 'névnap',
         description: 'apu',
-        date: '2026-03-03'
+        date: '2026-08-03'
       })
 
     assert.equal(res.status, 200)
     assert.equal(res.body.success, true)
     assert.equal(res.body.data.description, 'apu')
-    assert.equal(res.body.data.date.slice(0, 10), '2026-03-03')
+    assert.equal(res.body.data.date.slice(0, 10), '2026-08-03')
 
   })
 
@@ -114,7 +114,7 @@ describe('/api/reminders', function () {
       .send({
         title: 'találkozó',
         description: 'barátokkal',
-        date: '2026-02-01'
+        date: '2026-06-01'
       })
 
     const id = createRes.body.data.id

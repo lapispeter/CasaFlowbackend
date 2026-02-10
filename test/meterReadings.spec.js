@@ -40,7 +40,7 @@ describe('/api/meter-readings', function () {
       .send({
         meterType: 'Villany',
         reading: 123.45,
-        date: '2026-02-01'
+        date: '2026-06-01'
       })
 
     assert.equal(res.status, 201)
@@ -59,7 +59,7 @@ describe('/api/meter-readings', function () {
       .send({
         meterType: 'Gáz',
         reading: 50.5,
-        date: '2026-02-02'
+        date: '2026-06-02'
       })
 
     const res = await request(app)
@@ -82,7 +82,7 @@ describe('/api/meter-readings', function () {
       .send({
         meterType: 'Víz',
         reading: 10,
-        date: '2026-02-03'
+        date: '2026-06-03'
       })
 
     const id = createRes.body.data.id
@@ -95,7 +95,7 @@ describe('/api/meter-readings', function () {
       .send({
         meterType: 'Víz',
         reading: 15,
-        date: '2026-02-04'
+        date: '2026-06-04'
       })
 
     assert.equal(res.status, 200)
@@ -113,7 +113,7 @@ describe('/api/meter-readings', function () {
       .send({
         meterType: 'Net',
         reading: 999,
-        date: '2026-02-05'
+        date: '2026-06-05'
       })
 
     const id = createRes.body.data.id
