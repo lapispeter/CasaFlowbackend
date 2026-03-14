@@ -15,6 +15,6 @@ ADMIN_PASSWORD= //pl. titkos
 
 node op key:generate
 node op migrate
-node op db:seed
+npm run seed:admin
 npm run dev
 ```
